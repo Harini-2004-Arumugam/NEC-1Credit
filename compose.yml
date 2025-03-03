@@ -1,1 +1,15 @@
-Update this file to add the content
+version: '3'
+services:
+  kiruthikaa:
+    image: "kiruthika183/22it018-personal-api"
+    container_name: kiruthika_container
+    restart: always
+    ports:
+      - "5003:5000"
+
+  harini:
+    image: "hariniarumugam/22it012-personal-api"
+    container_name: harini12_container
+    restart: always
+    ports:
+      - "5004:5000"
